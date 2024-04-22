@@ -1,0 +1,135 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* Variables */
+:root {
+  --color-primary: #16045f;
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #F3F5FC;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-alura {
+  padding: 20px;
+}
+
+.titulo-principal {
+  width: 55%;
+}
+
+.titulo-principal h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contenedorcabecera {
+  text-align: center;
+}
+
+.cantidades, .contenedor_invertir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cantidades select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.cantidades input {
+  font-size: 30px;
+  text-align: right;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.rate {
+  color: var(--color-primary);
+  font-size: 1.2em;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.boton {
+  color: white;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 0.9em;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.iconos i {
+  font-size: 2em;
+  color: #0A3871;
+  transition: color 0.3s;
+}
+
+.iconos i:hover {
+  color: #5d8cc7;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+
+  .cantidades input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-alura {
+    width: 30%;
+  }
+
+  .boton {
+    width: 90%;
+    height: 60px;
+    font-size: 1em;
+  }
+}
